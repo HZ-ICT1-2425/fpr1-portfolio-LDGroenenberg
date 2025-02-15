@@ -12,6 +12,9 @@ export default defineConfig({
                 'resources/css/footer.css',
                 'resources/css/indexstyles.css',
                 'resources/css/profilestyles.css',
+                'resources/css/blogstyles.css',
+                'resources/css/dashboardstyles.css',
+                'resources/css/faqstyles.css',
                 //images
                 'resources/images/backgroundimage2.png',
                 'resources/images/githubicon.png',
@@ -27,7 +30,6 @@ export default defineConfig({
                 'resources/images/thescore.png',
                 'resources/images/tiesto.png',
                 'resources/images/warhammer.png',
-
             ],
             refresh: true,
         }),
