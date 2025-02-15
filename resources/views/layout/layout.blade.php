@@ -57,10 +57,11 @@
         <div>
             <h4>&lt;Pages/&gt;</h4>
             <ul>
-                <li><a class="profilebutton" href="/html/profile.html">&lt;Profile&gt;</a></li>
-                <li><a class="blogbutton" href="/html/blog.html">&lt;Blog&gt;</a></li>
-                <li><a class="dashboardbutton" href="/html/dashboard.html">&lt;Dashboard&gt;</a></li>
-                <li><a class="faqbutton" href="/html/faq.html">&lt;faq&gt;</a></li>
+                <li><a class="indexbutton" href="{{ route('home') }}">&lt;Home&gt;</a></li>
+                <li><a class="profilebutton" href="{{ route('profile') }}">&lt;Profile&gt;</a></li>
+                <li><a class="blogbutton" href="{{ route('blog') }}">&lt;Blog&gt;</a></li>
+                <li><a class="dashboardbutton" href="{{ route('dashboard') }}">&lt;Dashboard&gt;</a></li>
+                <li><a class="faqbutton" href="{{ route('faq') }}">&lt;faq&gt;</a></li>
             </ul>
         </div>
         <article><!--vertical line--></article>
