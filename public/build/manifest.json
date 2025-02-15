@@ -46,9 +46,22 @@
     "src": "resources/css/indexstyles.css",
     "isEntry": true
   },
+  "resources/css/profilestyles.css": {
+    "file": "assets/profilestyles-D43eO3Gd.css",
+    "src": "resources/css/profilestyles.css",
+    "isEntry": true
+  },
   "resources/fonts/CascadiaMono-Regular.otf": {
     "file": "assets/CascadiaMono-Regular-CI1OXauv.otf",
     "src": "resources/fonts/CascadiaMono-Regular.otf"
+  },
+  "resources/images/Formula1-24.png": {
+    "file": "assets/Formula1-24-eYVUjet-.png",
+    "src": "resources/images/Formula1-24.png"
+  },
+  "resources/images/armin.png": {
+    "file": "assets/armin-BRAl8J6T.png",
+    "src": "resources/images/armin.png"
   },
   "resources/images/backgroundimage2.png": {
     "file": "assets/backgroundimage2-T5TREmU3.png",
@@ -65,6 +78,38 @@
   "resources/images/hz-university-of-applied-sciences.png": {
     "file": "assets/hz-university-of-applied-sciences-DYebUrmQ.png",
     "src": "resources/images/hz-university-of-applied-sciences.png"
+  },
+  "resources/images/kaleo.png": {
+    "file": "assets/kaleo-Cg4Cye6j.png",
+    "src": "resources/images/kaleo.png"
+  },
+  "resources/images/legendofzelda.png": {
+    "file": "assets/legendofzelda-BGG5T8ne.png",
+    "src": "resources/images/legendofzelda.png"
+  },
+  "resources/images/minecraft.png": {
+    "file": "assets/minecraft-BOuiVKVX.png",
+    "src": "resources/images/minecraft.png"
+  },
+  "resources/images/ohthelarceny.png": {
+    "file": "assets/ohthelarceny-0Ur-oGGp.png",
+    "src": "resources/images/ohthelarceny.png"
+  },
+  "resources/images/rockedleague.png": {
+    "file": "assets/rockedleague-DUxx7im1.png",
+    "src": "resources/images/rockedleague.png"
+  },
+  "resources/images/thescore.png": {
+    "file": "assets/thescore-C_MIaJYF.png",
+    "src": "resources/images/thescore.png"
+  },
+  "resources/images/tiesto.png": {
+    "file": "assets/tiesto-lTmCgXKj.png",
+    "src": "resources/images/tiesto.png"
+  },
+  "resources/images/warhammer.png": {
+    "file": "assets/warhammer-BahfouBA.png",
+    "src": "resources/images/warhammer.png"
   },
   "resources/js/app.js": {
     "file": "assets/app-CqflisoM.js",

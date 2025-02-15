@@ -6,9 +6,9 @@
     <title>Home Page</title>
     <meta name="description" content="portofolio website">
     <meta name="author" content="Lucas Groenenberg">
-    <link rel="stylesheet" href=@vite(['resources/css/header.css'])>
+    <link rel="stylesheet" href="{{ Vite::asset('resources/css/header.css') }}">
+    <link rel="stylesheet" href="{{ Vite::asset('resources/css/footer.css') }}">
     @yield('contentcss')
-    <link rel="stylesheet" href=@vite(['resources/css/footer.css'])>
 </head>
 <body>
 {{-- Navigation bar --}}
@@ -18,11 +18,11 @@
     </section>
     <section class="pageNavigation">
         <nav>
-            <a {{ route('home') }} class="indexbutton">&lt;Home&gt;</a>
-            <a class="profilebutton" href="html/profile.html">&lt;Profile&gt;</a>
-            <a class="blogbutton" href="html/blog.html">&lt;Blog&gt;</a>
-            <a class="dashboardbutton" href="html/dashboard.html">&lt;Dashboard&gt;</a>
-            <a class="faqbutton" href="html/faq.html">&lt;faq&gt;</a>
+            <a href="{{ route('home') }}" class="indexbutton">&lt;Home&gt;</a>
+            <a href="{{ route('profile') }}" class="profilebutton">&lt;Profile&gt;</a>
+            <a href="{{ route('blog') }}" class="blogbutton">&lt;Blog&gt;</a>
+            <a href="{{ route('dashboard') }}" class="dashboardbutton">&lt;Dashboard&gt;</a>
+            <a href="{{ route('faq') }}" class="faqbutton">&lt;FAQ&gt;</a>
         </nav>
     </section>
     <section class="usefullLinks">

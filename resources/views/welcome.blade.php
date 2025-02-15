@@ -1,11 +1,10 @@
 @extends('layout.layout')
 
 @section('contentcss')
-    <link rel="stylesheet" href=@vite(['resources/css/indexstyles.css'])>
+    <link rel="stylesheet" href="{{ Vite::asset('resources/css/indexstyles.css') }}">
 @endsection
 
 @section('content')
-
     <section class="mainSectionOne">
     <article class="welcome">
         <h2>&lt;Welcome/&gt;</h2>
