@@ -1,0 +1,88 @@
+:root {
+    --background-color: #0F0F0F;
+    --fond-color: #F0F0F0;
+    --secondary-fond-color: #cccccc;
+    --primary-color: #222222;
+    --secondary-color: #35e70d;
+    --accent-color: #054403;
+}
+
+@font-face {
+    font-family: 'cascadia-mono';
+    src: url(../fonts/CascadiaMono-Regular.otf)
+}
+
+/* footer */
+footer {
+    background-color: var(--primary-color) ;
+    color: var(--fond-color);
+    display: flex;
+    gap: 20rem;
+    padding: 1rem 2rem;
+    border-top: solid 0.1rem var(--secondary-color);
+    margin-top: 5rem;
+}
+
+/* Footer Credits part */
+.footerCredits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left:3rem;
+}
+
+.footerCredits hr {
+    height: 1px;
+    color: var(--secondary-color);
+    background: var(--secondary-color);
+    font-size: 0;
+    border: 0;
+}
+
+.footerCredits div p {
+    display: flex;
+    align-items: center;
+}
+
+.footerCredits div p img {
+    padding-left: 0.4rem ;
+}
+
+.footerCredits hr {
+    margin: 1rem 0;
+}
+
+.hz-extended-logo {
+    width: 6rem;
+    height: auto;
+}
+
+/* Footer Links part */
+.footerLinks {
+    display: flex;
+    gap: 2rem;
+}
+
+.footerLinks div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footerLinks article {
+    border: solid 0.1rem var(--secondary-color);
+    height: 8rem;
+}
+
+.footerLinks li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    color: var(--secondary-fond-color);
+}

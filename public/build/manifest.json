@@ -31,6 +31,41 @@
     "file": "assets/fa-v4compatibility-C9RhG_FT.woff2",
     "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2"
   },
+  "resources/css/footer.css": {
+    "file": "assets/footer-DgpZeJIX.css",
+    "src": "resources/css/footer.css",
+    "isEntry": true
+  },
+  "resources/css/header.css": {
+    "file": "assets/header-Dpybx6f4.css",
+    "src": "resources/css/header.css",
+    "isEntry": true
+  },
+  "resources/css/indexstyles.css": {
+    "file": "assets/indexstyles-DockrR6u.css",
+    "src": "resources/css/indexstyles.css",
+    "isEntry": true
+  },
+  "resources/fonts/CascadiaMono-Regular.otf": {
+    "file": "assets/CascadiaMono-Regular-CI1OXauv.otf",
+    "src": "resources/fonts/CascadiaMono-Regular.otf"
+  },
+  "resources/images/backgroundimage2.png": {
+    "file": "assets/backgroundimage2-T5TREmU3.png",
+    "src": "resources/images/backgroundimage2.png"
+  },
+  "resources/images/githubicon.png": {
+    "file": "assets/githubicon-X_bouhd8.png",
+    "src": "resources/images/githubicon.png"
+  },
+  "resources/images/hz-logo.png": {
+    "file": "assets/hz-logo-CvczDI2S.png",
+    "src": "resources/images/hz-logo.png"
+  },
+  "resources/images/hz-university-of-applied-sciences.png": {
+    "file": "assets/hz-university-of-applied-sciences-DYebUrmQ.png",
+    "src": "resources/images/hz-university-of-applied-sciences.png"
+  },
   "resources/js/app.js": {
     "file": "assets/app-CqflisoM.js",
     "name": "app",

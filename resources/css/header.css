@@ -1,0 +1,107 @@
+:root {
+    --background-color: #0F0F0F;
+    --fond-color: #FFFFFF;
+    --secondary-fond-color: #cccccc;
+    --primary-color: #222222;
+    --secondary-color: #35e70d;
+    --accent-color: #054403;
+}
+
+@font-face {
+    font-family: 'cascadia-mono';
+    src: url(../fonts/CascadiaMono-Regular.otf)
+}
+
+* {
+    font-family: 'cascadia-mono';
+    size: 10px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* HeaderMenuBar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem 2rem 3rem;
+}
+
+/* headerTitle */
+.headerTitle h1 {
+    font-size: 2rem;
+    color: var(--fond-color);
+}
+
+/* pageNavigation */
+.pageNavigation nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.pageNavigation nav a {
+    padding: 0.5rem;
+    font-size: 16px;
+    text-decoration: none;
+    border: solid 0.1rem var(--secondary-color);
+    border-radius: 0.5rem;
+    color: var(--fond-color);
+}
+
+.pageNavigation nav a:hover{
+    transform: scale(1.1);
+    background-color: var(--secondary-color);
+    color: black;
+    transition-duration: 0.5s;
+}
+
+/* dropdown links menu*/
+.usefullLinks {
+    position: relative;
+    display: inline-block;
+}
+
+.dropDownButton {
+    padding: 0.5rem;
+    font-size: 16px;
+    text-decoration: none;
+    border: solid 0.1rem var(--secondary-color);
+    border-radius: 0.5rem;
+    color: var(--fond-color);
+    cursor: pointer;
+}
+
+.dropDownButton:hover{
+    transform: scale(1.1);
+    background-color: var(--secondary-color);
+    color: black;
+    transition-duration: 0.5s;
+}
+
+.dropDown {
+    display: none;
+    position: absolute;
+    background-color: var(--primary-color);
+    min-width: 160px;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0.6rem;
+}
+
+.dropDown a {
+    color: var(--fond-color);
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+}
+
+.dropDown a:hover {
+    color: var(--accent-color);
+}
+
+.usefullLinks:hover .dropDown {
+    display: block;
+}
