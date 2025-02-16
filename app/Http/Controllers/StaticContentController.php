@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-class StaticContentController
+class StaticContentController extends Controller
 {
     public function home()
     {
@@ -12,11 +12,6 @@ class StaticContentController
     public function profile()
     {
         return view('profile');
-    }
-
-    public function blog()
-    {
-        return view('blog');
     }
 
     public function dashboard()
