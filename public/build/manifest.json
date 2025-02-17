@@ -31,6 +31,11 @@
     "file": "assets/fa-v4compatibility-C9RhG_FT.woff2",
     "src": "node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.woff2"
   },
+  "resources/css/blogarticlestyles.css": {
+    "file": "assets/blogarticlestyles-D2ok5GfN.css",
+    "src": "resources/css/blogarticlestyles.css",
+    "isEntry": true
+  },
   "resources/css/blogstyles.css": {
     "file": "assets/blogstyles-CxWwLM1g.css",
     "src": "resources/css/blogstyles.css",

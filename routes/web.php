@@ -12,4 +12,6 @@ Route::get('/dashboard', [StaticContentController::class, 'dashboard'])->name('d
 
 Route::get('/faq', [StaticContentController::class, 'faq'])->name('faq');
 
-Route::get('/blog', [PostController::class, 'blog'])->name('blog');
+Route::get('/postsindex', [PostController::class, 'index'])->name('postsindex');
+
+Route::get('/posts/{slug}', [PostController::class, 'show'])->name('posts.show');

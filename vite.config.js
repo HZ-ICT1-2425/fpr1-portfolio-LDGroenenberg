@@ -15,6 +15,7 @@ export default defineConfig({
                 'resources/css/blogstyles.css',
                 'resources/css/dashboardstyles.css',
                 'resources/css/faqstyles.css',
+                'resources/css/blogarticlestyles.css',
                 //images
                 'resources/images/backgroundimage2.png',
                 'resources/images/githubicon.png',
