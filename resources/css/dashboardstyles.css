@@ -1,0 +1,81 @@
+:root {
+    --background-color: #0F0F0F;
+    --fond-color: #FFFFFF;
+    --secondary-fond-color: #cccccc;
+    --primary-color: #222222;
+    --secondary-color: #35e70d;
+    --accent-color: #054403;
+}
+
+@font-face {
+    font-family: 'cascadia-mono';
+    src: url('resources/fonts/CascadiaMono-Regular.otf')
+}
+
+* {
+    color: var(--fond-color);
+    font-family: 'cascadia-mono';
+    size: 10px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: var(--background-color);
+}
+
+/*main*/
+main {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+table {
+    border: 1px solid var(--fond-color);
+    border-collapse: collapse;
+    background-color: var(--primary-color);
+
+}
+
+table td, th {
+    border: 1px solid var(--fond-color);
+    padding: 4px;
+}
+
+/* in progress */
+.inProgress td {
+    color: orange;
+}
+
+#inProgress {
+    color: orange;
+}
+
+/* failed */
+.failed td {
+    color: red;
+}
+
+#failed {
+    color: red;
+}
+
+/* passed */
+.passed td {
+    color: green;
+}
+
+#passed {
+    color: green;
+}
+
+/* not started */
+.notStarted td {
+    color: white
+}
+
+#notStarted {
+    color: white
+}

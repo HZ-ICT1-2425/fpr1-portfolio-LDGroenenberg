@@ -1,138 +1,53 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout.layout')
 
-    <title>HZ HBO-ICT</title>
+@section('contentcss')
+    <link rel="stylesheet" href="{{ Vite::asset('resources/css/indexstyles.css') }}">
+@endsection
 
-    {{-- Compiled assets --}}
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-</head>
-<body>
-{{-- Navigation bar --}}
-<nav class="navbar is-primary  has-text-white" >
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="/" class="navbar-item">
-                <strong><i class="fas fa-graduation-cap"></i> HZ</strong>
-            </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu">
-            <div class="navbar-start">
-                <a href="{{ route('home') }}"
-                   class="navbar-item {{ Request::route()->getName() === 'home' ? "is-active" : "" }}">
-                    Home
-                </a>
-            </div>
-        </div>
-    </div>
-</nav>
-
-{{-- Content --}}
-<section class="hero  is-medium  is-bold is-primary">
-    <div class="hero-body" style="
-            background: url('https://www.hz.nl/imager/uploads/images/3.-Werk-en-studie/Headers/docent-coacht-studenten-003_c8fa470484be7b69be5daae77a1602c5.jpg') no-repeat center center;
-            background-size: cover;"
-    ></div>
+@section('content')
+    <section class="mainSectionOne">
+    <article class="welcome">
+        <h2>&lt;Welcome/&gt;</h2>
+        <p>
+            My name is Lucas Groenenberg and this is my Who I am portofolio website.<br/>
+            this site to tell you a little bit about me witch you can find at the profile page.<br/>
+            On the blog page I have some more info like my SWOT analysis.<br/>
+            The dashboard page is to keep track of my study progress,<br/>
+            and on the FAQ page you can find Frequently Asked Questions.
+        </p>
+    </article>
+    <article class="background"></article>
 </section>
-
-<section class="section">
-    <div class="container">
-        <div class="columns">
-
-            <div class="column is-8-desktop is-12-tablet">
-
-                <div class="content">
-                    <h1>Welcome to the HZ HBO-ICT template app.</h1>
-                    <p>
-                        Posuere porttitor natoque velit duis penatibus fermentum dignissim ut? Vel vel mi purus
-                        tempor nec conubia platea venenatis. Mauris pharetra auctor magnis, vehicula integer risus
-                        taciti gravida semper fames! Eu fermentum lorem accumsan litora. Consequat dapibus interdum
-                        primis lorem. Convallis integer mi suscipit tempor. Ad tincidunt placerat at. Sagittis
-                        pulvinar consectetur commodo, placerat varius sociosqu egestas felis! Curae; dictumst porta
-                        tempus. Nisi nec morbi netus euismod egestas proin sed tempor. Nam feugiat ante ante.
-                        Conubia vehicula tincidunt facilisis quisque risus senectus convallis. Eget at feugiat vel
-                        nisi. Tortor, facilisis neque elementum ultricies blandit amet orci dictumst eu mi molestie.
-                        Libero vulputate porta proin volutpat suspendisse aenean aenean facilisi ut primis!
-                        Venenatis elementum auctor neque urna et facilisis vulputate erat lorem habitasse libero!
-                        Risus ornare quam rutrum praesent blandit congue aliquet mauris.
-                    </p>
-                    <p>
-                        Elementum orci eget vel adipiscing tempor malesuada? Sollicitudin euismod nunc feugiat
-                        accumsan accumsan condimentum nulla pellentesque sagittis habitasse suspendisse praesent?
-                        Lectus proin justo vulputate tristique duis metus, est pellentesque blandit quam pharetra.
-                        Maecenas tincidunt litora mauris mollis ornare dictum nec placerat lectus massa lobortis
-                        auctor. Hac feugiat dolor, ac ridiculus mi adipiscing aptent elementum suspendisse augue
-                        rutrum! Habitasse a consequat ornare dictumst integer dis porta.
-                    </p>
-                    <p>
-                        Blandit mollis felis gravida sem ad venenatis ut a lacus! Magna odio netus, torquent rhoncus
-                        fames velit. Adipiscing libero, class cursus ipsum penatibus enim mollis netus. Sociis
-                        luctus eros sapien platea parturient fringilla. Senectus purus tincidunt laoreet purus
-                        praesent. Accumsan pulvinar tincidunt gravida malesuada senectus proin, elit cubilia
-                        lobortis quisque tellus? Torquent dis natoque sapien natoque sagittis conubia pulvinar risus
-                        elementum hac adipiscing arcu. Sem nisl fusce phasellus adipiscing pretium eget hendrerit
-                        proin non. Vestibulum lacus magna, commodo volutpat.
-                    </p>
-                    <p>
-                        Vivamus ridiculus amet arcu. Magnis venenatis vehicula venenatis molestie molestie proin sed
-                        blandit, inceptos volutpat. Auctor auctor massa sodales ipsum. Congue est quisque porta?
-                        Porta phasellus sem torquent ad feugiat sollicitudin nisi tempor tortor habitasse. Eros
-                        condimentum enim blandit pulvinar. Justo aenean, taciti curae; diam volutpat cubilia ante
-                        vestibulum. Augue penatibus phasellus inceptos tortor convallis ridiculus at ad. Nisl
-                        curabitur vel gravida, montes sit velit pellentesque. Sem, dapibus maecenas urna lectus
-                        mauris quisque nibh accumsan amet curabitur egestas dolor. Sagittis montes magnis quam
-                        fringilla accumsan bibendum. Nisl, a laoreet himenaeos sapien lorem quisque taciti lacus
-                        elit mauris. Mollis eleifend montes commodo? Accumsan nullam venenatis malesuada netus metus
-                        sociosqu magnis velit. Rhoncus lacus tempus praesent fermentum netus ullamcorper dolor
-                        integer nulla.
-                    </p>
-                    <p>
-                        Habitasse suspendisse egestas vestibulum pellentesque per leo enim metus donec ad. Hac metus
-                        convallis nibh eget, parturient dis elementum posuere. Felis, ultricies fusce est cubilia
-                        facilisis odio id velit dapibus suspendisse. Erat praesent nullam aliquam. Rutrum commodo
-                        eget malesuada per montes, curae; senectus convallis sociis per. Risus mattis justo vivamus
-                        lorem bibendum aenean eleifend facilisi, suscipit consectetur libero litora. Interdum?
-                    </p>
-                </div>
-            </div>
+<section class="studyChose">
+    <article>
+        <div>
+            <h2>&lt;Why i chose for HBO-ICT/&gt;</h2>
+            <p>
+                before I signed up for this study I worked 3 years at a elementary school.<br/>
+                I started to lose interest in the job,<br>
+                and didn't got the fun out of it as when I started working.<br/>
+                In the mean time I started to pick up coding and got more ICT tasks at my work.<br/>
+                I started with simply copying code and try to edit it to what I wanted it to do,<br/>
+                but soon after I started learning html and CSS and made some simple websites.<br/>
+                I also found work more fun again by doing some ICT tasks but it just wasn't it.<br/>
+                For some time I was looking to start a new study,<br>
+                and I just made the decision and chose for HBO ICT.
+            </p>
         </div>
-    </div>
+        <img class="hzLogo" src="{{ Vite::asset('resources/images/hz-logo.png') }}" alt="hz-logo https://hz.nl/en/">
+    </article>
 </section>
-
-{{-- Footer --}}
-<footer class="footer">
-    <div class="container">
-        <div class="columns is-multiline">
-
-            <div class="column has-text-centered">
-                <div>
-                    <a href="/" class="link">Home</a>
-                </div>
-            </div>
-
-            <div class="column has-text-centered">
-                <div>
-                    <a href="https://opensource.org/licenses/MIT" class="link">
-                        <i class="fa fa-balance-scale" aria-hidden="true"></i> License: MIT
-                    </a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="content is-small has-text-centered">
-            <p class="">Theme built by <a href="https://www.csrhymes.com">C.S. Rhymes</a> | adapted by <a href="https://github.com/dwaard">BugSlayer</a></p>
-            <p>PROJECT FOOTER HERE</p>
-        </div>
-    </div>
-</footer>
-
-</body>
-</html>
+<section class="ictWorkField">
+    <article><h2>&lt;Why the ICT workfield fits me/&gt;</h2>
+        <p>
+            I like to work with computers. I always want to learn new thing to  achieve my goals.<br/>
+            ICT is verry big there are countless options of what you can do.<br/>
+            The parts I like the most about ICT are problem solving and doing research,<br/>
+            I will just keep going until I know how to do it or fix a problem.<br/>
+            also the creative side of it like the design for a website.<br/>
+            because of my work experience I fount out I just like working with computers,<br/>
+            and that it is something I would just like to do.
+        </p>
+    </article>
+</section>
+@endsection

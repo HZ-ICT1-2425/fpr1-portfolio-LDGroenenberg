@@ -1,0 +1,47 @@
+:root {
+    --background-color: #0F0F0F;
+    --fond-color: #FFFFFF;
+    --secondary-fond-color: #cccccc;
+    --primary-color: #222222;
+    --secondary-color: #35e70d;
+    --accent-color: #054403;
+}
+
+@font-face {
+    font-family: 'cascadia-mono';
+    src: url('resources/fonts/CascadiaMono-Regular.otf')
+}
+
+* {
+    font-family: 'cascadia-mono';
+    size: 10px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: var(--background-color);
+    color: var(--fond-color);
+}
+
+/* main */
+main {
+    display: flex;
+    justify-content: center;
+    color: var(--fond-color);
+    margin: 3rem 0;
+}
+
+main section {
+    padding: 1rem;
+    background-color: var(--primary-color);
+    width: 50rem;
+    margin-bottom: 3rem;
+}
+
+main section h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}

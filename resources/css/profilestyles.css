@@ -1,0 +1,94 @@
+:root {
+    --background-color: #0F0F0F;
+    --fond-color: #F0F0F0;
+    --secondary-fond-color: #cccccc;
+    --primary-color: #222222;
+    --secondary-color: #35e70d;
+    --accent-color: #054403;
+}
+
+@font-face {
+    font-family: 'cascadia-mono';
+    src: url('resources/fonts/CascadiaMono-Regular.otf')
+}
+
+* {
+    color: var(--fond-color);
+    font-family: 'cascadia-mono';
+    size: 10px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: var(--background-color);
+}
+
+/* Main content */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+main section {
+    display: flex;
+    gap: 2rem;
+}
+
+main section article {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    border: solid 1rem var(--primary-color);
+    border-radius: 1rem;
+}
+
+main section article h2 {
+    margin-bottom: 1rem;
+}
+
+main section article ul li {
+    list-style: none;
+    padding-bottom: 0.5rem;
+}
+
+main section article ul li a {
+    color: var(--secondary-color)
+}
+
+.hobbys {
+    width: 20.45rem;
+}
+
+.links {
+    width: 20.45rem;
+}
+
+.games, .music {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+main section article div {
+    display: flex;
+    flex-direction: row;
+}
+
+main section article div img {
+    width: 9rem;
+    height: auto;
+}
+
+.games a:hover, .music a:hover{
+    transform: scale(1.1);
+}
+
+.links ul li a {
+    text-decoration: none
+}

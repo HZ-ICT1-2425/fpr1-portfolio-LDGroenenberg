@@ -1,0 +1,63 @@
+:root {
+    --primary-color: #222222;
+    --secondary-color: #35e70d;
+    --background-color: #0F0F0F;
+    --fond-color: #F0F0F0;
+    --secondary-fond-color: #cccccc;
+    --accent-color: #054403;
+}
+
+@font-face {
+    font-family: 'cascadia-mono';
+    src: url('resources/fonts/CascadiaMono-Regular.otf')
+}
+
+* {
+    font-family: 'cascadia-mono';
+    size: 10px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: var(--background-color);
+    color: var(--fond-color);
+}
+
+
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+main section {
+    display: flex;
+    gap: 6rem;
+
+}
+
+main section article {
+    background-color: var(--primary-color);
+    width: 30rem;
+    border: 1rem solid var(--primary-color);;
+    border-radius: 1rem;
+
+}
+
+main section article h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+main section article p a {
+    color: var(--secondary-color)
+}
