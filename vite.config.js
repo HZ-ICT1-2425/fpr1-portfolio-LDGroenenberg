@@ -31,6 +31,8 @@ export default defineConfig({
                 'resources/images/thescore.png',
                 'resources/images/tiesto.png',
                 'resources/images/warhammer.png',
+                //fonds
+                'resources/fonts/CascadiaMono-Regular.otf',
             ],
             refresh: true,
         }),

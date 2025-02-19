@@ -18,5 +18,4 @@ class PostController extends Controller
 
         abort(404, 'Post not found.');
     }
-
 }

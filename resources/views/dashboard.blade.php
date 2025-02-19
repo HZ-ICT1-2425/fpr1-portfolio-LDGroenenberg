@@ -10,7 +10,7 @@
         <tr>
             <th>quarter</th>
             <th>Course</th>
-            <th>ECs</th>
+            <th>ECs</th>q
             <th>exam</th>
             <th>Grade</th>
         </tr>

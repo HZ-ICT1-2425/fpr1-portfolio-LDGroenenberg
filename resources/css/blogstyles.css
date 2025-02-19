@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'cascadia-mono';
-    src: url(../fonts/CascadiaMono-Regular.otf)
+    src: url('resources/fonts/CascadiaMono-Regular.otf')
 }
 
 * {
@@ -40,7 +40,7 @@ main {
 main section {
     display: flex;
     gap: 6rem;
-    
+
 }
 
 main section article {
